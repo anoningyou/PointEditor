@@ -77,7 +77,7 @@ export class AppComponent {
     const builder = new XMLBuilder(options);
     let xmlDataStr = builder.build(this.file);
     let element = document.createElement('a');
-    element.setAttribute('href', 'data:text/xml;charset=utf-8,' + encodeURIComponent(xmlDataStr));
+    element.setAttribute('href', 'data:text/gpx;charset=utf-8,' + encodeURIComponent(xmlDataStr));
     element.setAttribute('download', `${this.fileName}.gpx`);
   
     element.style.display = 'none';
