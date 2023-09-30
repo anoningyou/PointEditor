@@ -1,0 +1,41 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.card {
+    height: calc(100% - 100px);
+    flex: 1 1 auto;
+    max-width: 350px;
+    margin-bottom: 10px;
+    .content{
+        height: calc(100% - 60px);
+    }
+}
+.actions{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.safe-form {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.points-container {
+    max-height:calc(100% - 100px) ;
+    overflow-y: auto;
+}
